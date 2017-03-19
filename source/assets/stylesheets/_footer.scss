@@ -1,0 +1,15 @@
+#footer {
+
+  @include media($medium-screen-up){
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+  }
+}
+
+.credits {
+  font-family: $heading-font-family;
+  font-size: 0.8em;
+  text-align: center;
+}

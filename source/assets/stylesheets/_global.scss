@@ -1,19 +1,47 @@
-body {
-  background-color: $light-gray;
-  color: $medium-gray;
+html {
+  @include media($medium-screen-up){
+    height: 100%;
+  }
+  background: no-repeat linear-gradient(135deg, $orange, $red);
+  background-size: cover;
+  font-family: $base-font-family;
 }
 
-.delete-me {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
+.outer-container {
+  @include outer-container;
+}
 
-  .container {
-    text-align: center;
+.in-progress-text-container {
+  margin: 0 auto modular-scale(1);
+  padding: $base-spacing;
 
-    h1 {
-      font-weight: 200;
-    }
+  @include media($medium-screen-up){
+    border-radius: $base-border-radius;
+    background-color: $white;
+    color: $dark-gray;
+    max-width: 26em;
   }
+
+  @include media($large-screen-up){
+    border-radius: $base-border-radius * 2;
+    max-width: 38em;
+  }
+}
+
+.intro {
+  font-size: $base-font-size * 0.7;
+
+  @include media($medium-screen-up){
+    font-size: $base-font-size * 0.8;
+  }
+
+  @include media($large-screen-up){
+    font-size: $base-font-size * 0.8;
+  }
+}
+
+span {
+  display: block;
+  padding-top: $small-spacing;
+  text-align: right;
 }

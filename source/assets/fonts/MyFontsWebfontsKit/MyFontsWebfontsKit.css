@@ -1,0 +1,41 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3361563, 2017-03-19T10:27:52-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Adagio_Serif_Script-Regular by BORUTTA GROUP
+ * URL: http://www.myfonts.com/fonts/borutta/adagio-sans-script/regular-141077/
+ * 
+ * Webfont: Adagio_Sans-Bold by BORUTTA GROUP
+ * URL: http://www.myfonts.com/fonts/borutta/adagio-sans/bold/
+ * Copyright: MATEUSZ MACHALSKI
+ * 
+ * Webfont: Adagio_Sans-Regular by BORUTTA GROUP
+ * URL: http://www.myfonts.com/fonts/borutta/adagio-sans/regular/
+ * Copyright: MATEUSZ MACHALSKI
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3361563
+ * Licensed pageviews: 10,000
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/334b1b");
+
+  
+@font-face {font-family: 'AdagioScript';font-weight: normal;font-style: italic;src: url('webfonts/334B1B_0_0.eot');src: url('webfonts/334B1B_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/334B1B_0_0.woff2') format('woff2'),url('webfonts/334B1B_0_0.woff') format('woff'),url('webfonts/334B1B_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AdagioSans';font-weight: bold;font-style: normal;src: url('webfonts/334B1B_1_0.eot');src: url('webfonts/334B1B_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/334B1B_1_0.woff2') format('woff2'),url('webfonts/334B1B_1_0.woff') format('woff'),url('webfonts/334B1B_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AdagioSans';font-weight: normal;font-style: normal;src: url('webfonts/334B1B_2_0.eot');src: url('webfonts/334B1B_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/334B1B_2_0.woff2') format('woff2'),url('webfonts/334B1B_2_0.woff') format('woff'),url('webfonts/334B1B_2_0.ttf') format('truetype');}
+ 

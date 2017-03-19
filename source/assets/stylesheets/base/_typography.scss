@@ -1,5 +1,5 @@
 body {
-  color: $base-font-color;
+  color: $white;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -22,14 +22,17 @@ p {
 }
 
 a {
-  color: $action-color;
-  text-decoration: none;
+  color: lighten($action-color, 15%);
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-color:lighten($action-color, 15%);
   transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: $action-color;
+    text-decoration-color: $action-color;
   }
 }
 
