@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Arbutus+Slab|Muli:400,400italic' rel='stylesheet' type='text/css'>
     <title><%= current_page.data.title || "Marion Couesnon portfolio" %></title>
-
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag  "application" %>
     <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
@@ -38,7 +37,18 @@
   <link rel="stylesheet" type="text/css" href="../assets/fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css">
   </head>
 
-  <body class="<%= page_classes %>">
+  <body>
     <%= yield %>
   </body>
+  <footer>
+    <div class="grid-container">
+      <div class="contacts-container">
+        <h2><a href="https://ch.linkedin.com/in/marion-couesnon-838a09a0" id="green">Restons en contact <i class="fa fa-circle" aria-hidden="true"></i></a> ! Vous pouvez consultez <a href="assets/images/cv-fr.pdf" id="yellow">mes faits d'armes <i class="fa fa-file-text" aria-hidden="true"></i></a> , <a href="http://www.twitter.com/marioncouesnon" id="blue">gazouiller gaiement avec moi
+        <i class="fa fa-twitter" aria-hidden="true"></i></a> ou même
+        <a href="mailto:marioncouesnon@gmail.com" id="purple">me proposer d'aller boire un thé <i class="fa fa-coffee" aria-hidden="true"></i></a> .
+        </h2>
+        <p class="credits">Ce site web a été codé avec <i class="fa fa-heart" aria-hidden="true"></i> et une pincée de jus de cerveau.</p>
+      </div>
+    </div>
+  </footer>
 </html>

@@ -1,5 +1,4 @@
 body {
-  color: $white;
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -11,6 +10,7 @@ h3,
 h4,
 h5,
 h6 {
+  color:$red;
   font-family: $heading-font-family;
   font-size: $base-font-size;
   line-height: $heading-line-height;
@@ -22,17 +22,15 @@ p {
 }
 
 a {
-  color: lighten($action-color, 15%);
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-decoration-color:lighten($action-color, 15%);
+  color: $action-color;
+  text-decoration-line: none;
+  text-decoration-color:$action-color;
   transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
-    color: $action-color;
-    text-decoration-color: $action-color;
+    color: $orange;
   }
 }
 

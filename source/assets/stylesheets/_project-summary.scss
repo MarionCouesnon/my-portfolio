@@ -1,0 +1,30 @@
+.case-wrapper {
+  margin-bottom : 4em;
+}
+
+.summary-container {
+  @media (min-width: 700px) {
+    display: flex;
+    @include grid-collapse;
+
+    .summary-info-wrapper{
+      @include grid-column(4);
+    }
+
+    .summary-text-wrapper {
+      @include grid-column(8);
+    }
+  }
+}
+
+ul {
+	margin-bottom: $base-line-height/2;
+
+	@media (min-width: 700px) {
+		margin-bottom: 0;
+	}
+}
+
+.goto {
+  text-align: right;
+}

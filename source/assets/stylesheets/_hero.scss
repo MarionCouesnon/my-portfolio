@@ -1,0 +1,28 @@
+.hero {
+  background: no-repeat linear-gradient(135deg, $orange, $red);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: 700px) {
+    height: 500px;
+  }
+
+  @media (min-width: 1200px) {
+    height: 600px;
+  }
+}
+
+.hero h1 {
+  color: $white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: $base-line-height 0;
+  font-size: 1.728em;
+
+  @media (min-width: 700px) {
+    padding: 0;
+    font-size: 2.48em;
+  }
+}

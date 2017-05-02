@@ -3,6 +3,7 @@ $base-font-family: 'AdagioSans', $helvetica, sans-serif;
 $heading-font-family: 'AdagioSans', serif;
 
 // Font Sizes
+$modular-scale-ratio: $minor-third;
 $base-font-size: modular-scale(1);
 
 // Line height
@@ -16,8 +17,8 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #000099;
-$dark-gray: #080221;
+$blue: #1565c0;
+$dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 
@@ -25,18 +26,21 @@ $light-gray: #ddd;
 $white: #f9f9f9;
 $orange: #FFA647;
 $red: #FF5967;
+$green: #42B72A;
+$yellow: #F9D423;
+$purple: #9b59b6;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $red;
 
 // Border
-$base-border-color: $light-gray;
+$base-border-color: $red;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors
 $base-background-color: #fff;
-$secondary-background-color: lighten($base-border-color, 25%);
+$secondary-background-color: $orange;
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);

@@ -1,18 +1,56 @@
 ---
-title: Waiting page
+title: Marion Couesnon Portfolio
 ---
 
-<div class="outer-container">
-  <div class="logo-container">
-    <div class="logo">
-      <p class="logo-name">marion couesnon</p>
-      <p class="logo-baseline">hyperactive designer</p>
-    </div>
-  </div>
-  <div class="in-progress-text-container">
-    <p class="intro">Hi folks! I am a french 25-year-old-girl currently attending a master class in Media Design in HEAD-Geneva (Switzerland). I am fond of typography, ergonomic interfaces and silkscreen printing. As a compulsively curious person, I am always learning new skills, which presently includes coding. By the way, I am actually rebuilding my website. While waiting for the release, why don't you have a look to <a href="../assets/images/cv-eng.pdf">my CV</a> or <a href="https://fr.pinterest.com/marioncouesnon/">my Pinterest boards?</a> You can also <a href="https://twitter.com/marioncouesnon">follow me on Twitter</a>. Thank you for your patience! <br><span>Marion.</span></p>
+<div class="hero">
+  <div class="grid-container">
+    <h1 class="hero-container">Hello! Je m'appelle Marion et je suis designer d'interaction. Je finis actuellement mes études en master Media Design à Genève (HEAD). Mes compétences se situent entre design graphique, UX et code.</h1>
   </div>
 </div>
-<footer id="footer">
-  <p class="credits">&copy; 2017, Marion Couesnon, All Rights Reserved.</p>
-</footer>
+<div class="grid-container">
+  <div class="case-summary-container">
+    <h1 class="title">Projets récents</h1>
+    <div class="case-wrapper">
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/209746557?byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="video"></iframe>
+      </div>
+      <p class="legend">Vidéo de <% link_to 'http://vincentdevevey.com/' do %>Vincent de Vevey<% end %></p>
+      <h2 class="case-name">Deadline</h2>
+      <div class="summary-container">
+        <ul class="summary-info-wrapper">
+          <li><span>Date :</span> avril 2017</li>
+          <li><span>Durée :</span> 8 mois</li>
+          <li><span>Rôle :</span> designer d’interaction</li>
+          <li><span>Équipe :</span> <% link_to 'http://www.valeriepierrehumbert.com' do %>Valérie Pierrehumbert<% end %></li>
+          <li><span>Outils :</span> illustrator, after effect, sketch, invision, draw.io</li>
+        </ul>
+        <p class="summary-text-wrapper">Deadline est un jeu hybride conçu pour l’exposition <!--J'ai aussi codé ce site web ! ;-) --><% link_to 'http://saloneludico.ch/' do %>Salone Ludico<% end %> de la section Media design de la HEAD—Genève. Le jeu vous plonge dans la peau d’un designer graphique à travers un jeu de carte et une application iPad. Pour gagner, vous devez réaliser la mission qui vous a été attribuée dans les temps impartis via l'iPad, en dépit des imprévus et des embuches imposés par les différents acteurs du projet (cartes de jeu). Ce travail a été l’occasion de concevoir un gameplay en équipe et d’aller jusqu’à une version aboutie d’un premier prototype.
+        </p>
+      </div>
+      <div class="goto">
+        <% link_to '/deadline' do %>Voir le projet
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="case-wrapper">
+      <%= image_tag 'hypertext/repro-fev-2017_046.jpg' %>
+      <h2 class="case-name">De Pandore à Post-it, une exploration empirique de l'hypertexte</h2>
+      <div class="summary-container">
+        <ul class="summary-info-wrapper">
+          <li><span>Date :</span> février 2017</li>
+          <li><span>Durée :</span> 6 mois</li>
+          <li><span>Rôle :</span> auteure - designer</li>
+          <li><span>Tuteur :</span> <% link_to 'http://www.nicolasnova.net' do %>Nicolas Nova<% end %></li>
+        </ul>
+        <p class="summary-text-wrapper">Cette édition est l’aboutissement de mon mémoire de master II à la HEAD—Genève. À l’origine, l’hypertexte est un moyen d’associer les connaissances à la manière de nos modes de raisonnement. Mais qu’en est-il en pratique ? Afin de comprendre la façon dont l’hypertexte structure Wikipédia, j’ai imaginé un test utilisateur basé sur la pratique des <% link_to 'https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Exercices/Course_wikip%C3%A9dienne' do %>wikichallenges<% end %>. J’ai mené ce test auprès de 11 personnes. Le mémoire fait la synthèse des résultats que j’ai obtenus. Ce projet m’a donné l’occasion de composer une série de tests utilisateurs afin de mettre en relation étroite pratique et réflexion dans une démarche de recherche en design. J’ai aussi eu l’occasion de présenter le projet à la <% link_to 'http://junior-research.ch/' do %>Junior Research Design Conference<% end %> en octobre 2016. Enfin, j’ai conçu l’édition du mémoire et assisté au processus d’impression du début à la fin.</p>
+      </div>
+      <div class="goto">
+        <% link_to '/hypertext' do %>Voir le projet
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

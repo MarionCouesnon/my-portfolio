@@ -1,15 +1,44 @@
-#footer {
+footer {
+  background: no-repeat linear-gradient(135deg, $orange, $red);
+  background-size: cover;
+  width: 100%;
+  padding: $base-line-height/2 0;
 
-  @include media($medium-screen-up){
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 60px;
+  @media (min-width: 700px) {
+    padding: 0;
+  }
+
+  h2,
+  p,
+  a {
+    color: $white;
+  }
+
+  .contacts-container {
+    margin-bottom: $base-line-height;
   }
 }
 
-.credits {
-  font-family: $heading-font-family;
-  font-size: 0.8em;
-  text-align: center;
+#green:active,
+#green:focus,
+#green:hover {
+  color: $green;
+}
+
+#yellow:active,
+#yellow:focus,
+#yellow:hover {
+  color: $yellow;
+}
+
+#blue:active,
+#blue:focus,
+#blue:hover {
+  color: $blue;
+}
+
+#purple:active,
+#purple:focus,
+#purple:hover {
+  color: $purple;
 }

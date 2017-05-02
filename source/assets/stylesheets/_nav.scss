@@ -1,0 +1,9 @@
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 2rem;
+
+  @media (min-width: 700px) {
+    padding: 2rem 0 4rem;
+  }
+}

@@ -1,0 +1,16 @@
+.social-media-container {
+  padding: 2rem 0 0;
+
+  a:hover {
+    color: darken( $white, 5% );
+  }
+  .fa {
+    font-size: 2rem;
+    padding-right: 1rem;
+  }
+
+  .fa-heart {
+    font-size: 1rem;
+    padding-right: 0;
+  }
+}

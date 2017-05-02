@@ -1,47 +1,46 @@
-html {
-  @include media($medium-screen-up){
-    height: 100%;
-  }
-  background: no-repeat linear-gradient(135deg, $orange, $red);
-  background-size: cover;
-  font-family: $base-font-family;
-}
+$custom-grid-large: (
+  columns: 12,
+  gutter: 32px,
+  media: 1189px,
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
 
-.outer-container {
-  @include outer-container;
-}
+$custom-grid-medium: (
+  columns: 8,
+  gutter: 26px,
+  media: 946px,
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
 
-.in-progress-text-container {
-  margin: 0 auto modular-scale(1);
-  padding: $base-spacing;
+$custom-grid-small: (
+  columns: 4,
+  gutter: 22px,
+  media: 319px,
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
 
-  @include media($medium-screen-up){
-    border-radius: $base-border-radius;
-    background-color: $white;
-    color: $dark-gray;
-    max-width: 26em;
-  }
+.grid-container {
+  @include grid-container($custom-grid-small);
+  padding: 0 $base-line-height;
 
-  @include media($large-screen-up){
-    border-radius: $base-border-radius * 2;
-    max-width: 38em;
-  }
-}
+  @media (min-width: 700px) {
+    @include grid-container($custom-grid-medium);
+    padding: 0;
+    .hero-container,
+    .case-summary-container,
+    .contacts-container,
+    .case-study-container {
+      @include grid-column(10);
+      @include grid-shift(1);
+    }
+	}
 
-.intro {
-  font-size: $base-font-size * 0.7;
-
-  @include media($medium-screen-up){
-    font-size: $base-font-size * 0.8;
-  }
-
-  @include media($large-screen-up){
-    font-size: $base-font-size * 0.8;
-  }
-}
-
-span {
-  display: block;
-  padding-top: $small-spacing;
-  text-align: right;
+	@media (min-width: 1200px) {
+    @include grid-container($custom-grid-large);
+    max-width: 1020px;
+    margin: 0 auto;
+	}
 }
