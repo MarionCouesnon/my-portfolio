@@ -1,10 +1,31 @@
+.videos-container {
+	@media (min-width: 700px) {
+		display: flex;
+		@include grid-collapse;
+		margin-bottom: $base-line-height /2;
+	}
+}
+
+.video-tile {
+		position: relative;
+		padding-bottom: 55%;
+		height: 0;
+		margin-bottom: $base-line-height /2;
+
+	@media (min-width: 700px) {
+		@include grid-column(6);
+		padding-bottom: 26.25%;
+		margin-bottom: 0;
+	}
+}
+
 .video-wrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
+	padding-bottom: 56.25%;
 	height: 0;
 }
-.video {
+.video-wrapper iframe,
+.video-tile iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
