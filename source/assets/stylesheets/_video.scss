@@ -1,21 +1,23 @@
 .videos-container {
 	@media (min-width: 700px) {
-		display: flex;
 		@include grid-collapse;
-		margin-bottom: $base-line-height /2;
+		display: flex;
+
 	}
+}
+
+.videos-container:first-of-type {
+	margin-bottom: $base-line-height /2;
 }
 
 .video-tile {
 		position: relative;
 		padding-bottom: 55%;
 		height: 0;
-		margin-bottom: $base-line-height /2;
 
 	@media (min-width: 700px) {
 		@include grid-column(6);
 		padding-bottom: 26.25%;
-		margin-bottom: 0;
 	}
 }
 
