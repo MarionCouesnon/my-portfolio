@@ -7,15 +7,16 @@ title: Marion Couesnon Portfolio
     <h1 class="hero-container">Hello! Je m'appelle Marion et je suis designer d'interaction. Je finis actuellement mes études en master Media Design à Genève (HEAD). Mes compétences se situent entre design graphique, UX et code.</h1>
   </div>
 </div>
+
 <div class="grid-container">
   <div class="case-summary-container">
     <h1 class="title">Projets récents</h1>
     <div class="case-wrapper">
-      <div class="video-wrapper">
-        <iframe src="https://player.vimeo.com/video/209746557?byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="video"></iframe>
-      </div>
-      <p class="legend">Vidéo de <% link_to 'http://vincentdevevey.com/' do %>Vincent de Vevey<% end %></p>
-      <h2 class="case-name">Deadline</h2>
+      <% link_to '/deadline' do %>
+      <%= image_tag 'deadline/201702_MD_Salone-Ludico_Deadline_HEAD_MichelGiesbrecht_001.jpg' %>
+      <% end %>
+      <p class="legend">Photographies de Michel Giesbrecht</p>
+      <h2 class="case-name"><% link_to '/deadline' do %>Deadline<% end %></h2>
       <div class="summary-container">
         <ul class="summary-info-wrapper">
           <li><span>Date :</span> avril 2017</li>
@@ -35,19 +36,71 @@ title: Marion Couesnon Portfolio
     </div>
 
     <div class="case-wrapper">
-      <%= image_tag 'hypertext/repro-fev-2017_046.jpg' %>
-      <h2 class="case-name">De Pandore à Post-it, une exploration empirique de l'hypertexte</h2>
+      <% link_to '/mealcanteen' do %>
+      <%= image_tag 'meal-canteen/meal-canteen-logo.jpg' %>
+      <% end %>
+      <p class="legend">Logo réalisé par <% link_to 'https://dribbble.com/laurentholdrinet' do %>Laurent Holdrinet<% end %></p>
+      <h2 class="case-name"><% link_to '/mealcanteen' do %>Meal Canteen<% end %></h2>
+      <div class="summary-container">
+        <ul class="summary-info-wrapper">
+          <li><span>Date :</span> avril 2016</li>
+          <li><span>Durée :</span> 2 mois</li>
+          <li><span>Rôle :</span> designer d’interaction</li>
+          <li><span>Équipe :</span> <% link_to 'https://github.com/mehlah' do %>Mehdi Lahmam<% end %></li>
+          <li><span>Outils :</span> sketch, bourbon, git</li>
+        </ul>
+        <p class="summary-text-wrapper"><% link_to 'https://mealcanteen.com/' do %>Meal Canteen<% end %> est une start-up qui ambitionne de réduire les déchets alimentaires dans la restauration collective grâce à une application permettant aux usagers des cantines scolaires et professionnelles de réserver à l’avance les plats qu’ils mangeront le lendemain midi. Ce projet, effectué dans le cadre de mon alternance de <% link_to 'http://dsaa.designvillefontaine.com/' do %>DSAA<% end %>, m’a permis de suivre la construction d’une start-up de l’idée jusqu’à la release d’un premier prototype. J’ai notamment pu organiser des interviews d’utilisateurs, mener des tests à partir de prototypes que j’ai codé et me familiariser avec les guidelines IOS pour la création de l’application iPhone.
+        </p>
+      </div>
+      <div class="goto">
+        <% link_to '/mealcanteen' do %>Voir le projet
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="case-wrapper">
+      <% link_to '/hypertext' do %>
+        <%= image_tag 'hypertext/repro-fev-2017_046.jpg' %>
+      <% end %>
+      <h2 class="case-name"><% link_to '/hypertext' do %>De Pandore à Post-it, une exploration empirique de l'hypertexte<% end %></h2>
       <div class="summary-container">
         <ul class="summary-info-wrapper">
           <li><span>Date :</span> février 2017</li>
           <li><span>Durée :</span> 6 mois</li>
           <li><span>Rôle :</span> auteure - designer</li>
           <li><span>Tuteur :</span> <% link_to 'http://www.nicolasnova.net' do %>Nicolas Nova<% end %></li>
+          <li><span>Outils :</span> javascript, inDesign, illustrator</li>
         </ul>
-        <p class="summary-text-wrapper">Cette édition est l’aboutissement de mon mémoire de master II à la HEAD—Genève. À l’origine, l’hypertexte est un moyen d’associer les connaissances à la manière de nos modes de raisonnement. Mais qu’en est-il en pratique ? Afin de comprendre la façon dont l’hypertexte structure Wikipédia, j’ai imaginé un test utilisateur basé sur la pratique des <% link_to 'https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Exercices/Course_wikip%C3%A9dienne' do %>wikichallenges<% end %>. J’ai mené ce test auprès de 11 personnes. Le mémoire fait la synthèse des résultats que j’ai obtenus. Ce projet m’a donné l’occasion de composer une série de tests utilisateurs afin de mettre en relation étroite pratique et réflexion dans une démarche de recherche en design. J’ai aussi eu l’occasion de présenter le projet à la <% link_to 'http://junior-research.ch/' do %>Junior Research Design Conference<% end %> en octobre 2016. Enfin, j’ai conçu l’édition du mémoire et assisté au processus d’impression du début à la fin.</p>
+        <p class="summary-text-wrapper">Cette édition est l’aboutissement de mon mémoire de master II à la <% link_to 'https://www.hesge.ch/head/formations-recherche/master-media-design' do %>HEAD—Genève<% end %>. À l’origine, l’hypertexte est un moyen d’associer les connaissances à la manière de nos modes de raisonnement. Mais qu’en est-il en pratique ? Afin de comprendre la façon dont l’hypertexte structure Wikipédia, j’ai imaginé un test utilisateur basé sur la pratique des <% link_to 'https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Exercices/Course_wikip%C3%A9dienne' do %>wikichallenges<% end %>. J’ai mené ce test auprès de 11 personnes. Le mémoire fait la synthèse des résultats que j’ai obtenus. Ce projet m’a donné l’occasion de composer une série de tests utilisateurs afin de mettre en relation étroite pratique et réflexion dans une démarche de recherche en design. J’ai aussi eu l’occasion de présenter le projet à la <% link_to 'http://junior-research.ch/' do %>Junior Research Design Conference<% end %> en octobre 2016. Enfin, j’ai conçu l’édition du mémoire et assisté au processus d’impression du début à la fin.</p>
       </div>
       <div class="goto">
         <% link_to '/hypertext' do %>Voir le projet
+          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="case-wrapper">
+      <% link_to '/crossroads' do %>
+        <%= image_tag 'crossroads/repro-jun-17.jpg' %>
+      <% end %>
+      <p class="legend">Photographies de <% link_to 'http://www.localf11.ch/baptiste-coulon/' do %>Baptiste Coulon<% end %></p>
+      <h2 class="case-name"><% link_to '/crossroads' do %>Crossroads<% end %></h2>
+      <div class="summary-container">
+        <ul class="summary-info-wrapper">
+          <li><span>Date :</span> juin 2017</li>
+          <li><span>Durée :</span> 2 mois</li>
+          <li><span>Rôle :</span> designer d’interaction</li>
+          <li><span>Équipe :</span> <% link_to 'http://osp.kitchen/' do %>Stéphanie Vilayphiou<% end %></li>
+          <li><span>Avec l'aide de :</span> <% link_to 'http://www.kevinvennitti.com/' do %>Kévin Vennitti<% end %>, <% link_to 'http://felicien.io/' do %>Félicien Goguey<% end %> et <% link_to 'http://et-nd.co/' do %>Étienne Ndiaye<% end %></li>
+          <li><span>Outils :</span> sketchup, illustrator, javascript, bourbon, dot et pstoedit</li>
+        </ul>
+        <p class="summary-text-wrapper">Ce projet est le résultat de mon épreuve pratique de master II à la <% link_to 'https://www.hesge.ch/head/formations-recherche/master-media-design' do %>HEAD—Genève<% end %>. Suite à l’écriture de mon mémoire, je devais réaliser un projet en lien avec celui-ci dans le cadre de la dernière épreuve de master. Mon mémoire s’intéressait à la structure de l’hypertexte. Pour en comprendre les logiques, j’ai mis en place une méthode basée sur les parcours effectués par des utilisateurs dans le cadre de <% link_to 'https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Exercices/Course_wikip%C3%A9dienne' do %>wikichallenges<% end %>. Pour mon projet, j’ai imaginé une installation permettant d’automatiser la récolte de données. L’utilisateur est d’abord incité à jouer une partie de wikichallenge, puis s’il remporte la partie, il est invité à récolter son parcours imprimé par un plotter et à le déposer dans l’installation.
+        </p>
+      </div>
+      <div class="goto">
+        <% link_to '/crossroads' do %>Voir le projet
           <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
         <% end %>
       </div>

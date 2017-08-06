@@ -6,8 +6,10 @@ layout: case-study
   <div class="case-study-container">
     <h1>Deadline</h1>
     <div class="desc-wrapper">
-      <%= image_tag 'deadline/201702_MD_Salone-Ludico_Deadline_HEAD_MichelGiesbrecht_001.jpg' %>
-      <p class="legend">Photographies de Michel Giesbrecht</p>
+      <div class="video-wrapper">
+        <iframe src="https://player.vimeo.com/video/209746557?color=ff9933&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="video"></iframe>
+      </div>
+      <p class="legend">Vidéo de <% link_to 'http://vincentdevevey.com/' do %>Vincent de Vevey<% end %></p>
       <h2>Règles du jeu</h2>
       <p>Six cartes doivent être distribuées à chaque joueur. Les cartes “SMS” permettent aux joueurs d’empêcher la progression de leurs adversaires tandis que les cartes “appels” permettent de se débloquer le cas échéant. Chaque joueur qui subit une attaque devra la contrecarrer grâce à la carte inverse de même couleur. Lorsqu’un joueur attaque un adversaire, il est obligé de lire la carte “SMS” à haute voix, avant de la poser. L’application placée au centre de la table fait partie intégrante du jeu. Elle affiche le calendrier et montre ainsi, combien de jours il reste avant la date fatidique. Elle permet également aux joueurs d’accéder à leurs checklists personnelles et de progresser dans leurs mandats. L’application connaît la progression de chaque joueur. Elle mettra alors des bâtons dans les roues de ceux qui sont les plus avancés! Il n’est peut-être pas très stratégique d’être en tête de course...
       </p>
@@ -21,7 +23,7 @@ layout: case-study
 
       <p>Lorsque j’ai commencé à travailler sur ce projet, la première chose qui m’a interrogée est comment répartir équitablement l’attention du joueur entre une interface et des cartes de jeu. À ce moment, l’interface n’était guère plus qu’un timer (chronomètre) et la majeure partie du jeu se passait avec les cartes.</p>
 
-      <div class="img-container">
+      <div class="img-container-2">
         <%= image_tag 'deadline/old-deadline-interface.jpg' %>
         <%= image_tag 'deadline/old-deadline-interface-2.jpg' %>
       </div>
@@ -41,11 +43,11 @@ layout: case-study
     <div class="desc-wrapper">
       <h2>Pourquoi une interface ronde ?</h2>
       <p>J’ai réalisé l’interface qui, de par son format rond était un réel challenge en terme d’UX et de design graphique. Cependant, ce choix de format s’est imposé pour deux raisons. Premièrement, le jeu parle de la gestion du temps dans la profession de designer graphique. Par analogie, une interface ronde permet de rappeler ce rapport au temps.</p>
-      <div class="img-container">
+      <div class="img-container-2">
         <%= image_tag 'deadline/basic-wireframe-deadline-01-copie.png' %>
         <%= image_tag 'deadline/task-interface-evolution.gif' %>
       </div>
-      <p class="legend">Le layout de l'app se compose d'un espace majeur d'interaction et d'un espace mineur dédié à chaque joueur. On peut voir comment les différentes évolutions de l'interface "selection de tâches" on mené à ce layout.</p>
+      <p class="legend">Le layout de l'app se compose d'un espace majeur d'interaction et d'espaces mineurs dédiés à chaque joueur. On peut voir comment les différentes évolutions de l'interface "selection de tâches" ont mené à ce layout.</p>
 
       <p>Deuxièmement, l’expérience se vit à 3 ou 4 joueurs assis autour d’une table. Une interface rectangulaire était trop complexe à gérer dans ce contexte car elle imposait un sens de lecture aux joueurs en dépit de leur répartition autour de la table. Au contraire, une interface ronde induit la possibilité de tourner l’interface plutôt que de suggérer le déplacement des joueurs ou la manipulation du device.</p>
 
