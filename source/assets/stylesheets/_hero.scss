@@ -1,28 +1,65 @@
 .hero {
-  background: no-repeat linear-gradient(135deg, $orange, $red);
-  background-size: cover;
-  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 650px;
+
+  background: linear-gradient(135deg, $orange, $red);
+  background-size: 250% 250%;
+
+  -webkit-animation: AnimationHero 10s ease infinite;
+  -moz-animation: AnimationHero 10s ease infinite;
+  animation: AnimationHero 10s ease infinite;
+
+  @-webkit-keyframes AnimationHero {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes AnimationHero {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes AnimationHero {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
 
   @media (min-width: 700px) {
-    height: 500px;
+    height: 1020px;
   }
 
   @media (min-width: 1200px) {
-    height: 600px;
+    height: 680px;
   }
 }
 
-.hero h1 {
+.logo-name,
+.logo-baseline {
   color: $white;
-  margin-top: 0;
+  text-align: center;
+}
+
+.logo-name {
+  font-family: $heading-font-family;
   margin-bottom: 0;
-  padding: $base-line-height 0;
+  text-transform: uppercase;
   font-size: 1.728em;
+  line-height: $base-line-height / 4;
 
   @media (min-width: 700px) {
-    padding: 0;
     font-size: 2.48em;
+  }
+}
+
+.logo-baseline {
+  font-family: $alt-font-family;
+  font-size: 1.388em;
+  font-weight: normal;
+
+  @media (min-width: 700px) {
+    font-size: 1.728em;
   }
 }
