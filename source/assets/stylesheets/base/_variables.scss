@@ -1,6 +1,7 @@
 // Typography
 $base-font-family: 'Adagio_Sans-Regular', $helvetica, sans-serif;
-$heading-font-family: 'Adagio_Sans-Bold', serif;
+$heading-font-family: 'Adagio_Sans-SemiBold', $helvetica, sans-serif;
+$alt-font-family: 'Adagio_Sans-Regular_italic', serif;
 
 // Font Sizes
 $modular-scale-ratio: $minor-third;
