@@ -105,10 +105,33 @@ th {
   display: inline-block;
   overflow-x: auto;
   white-space: nowrap;
+
   @media (min-width: 700px) {
     display: table;
     overflow-x: hidden;
   }
+}
+
+.tables {
+  -webkit-overflow-scrolling: touch;
+  background: radial-gradient(left, ellipse, rgba(255,89,103, .2) 0%, rgba(255,166,71, 0) 75%) 0 center,
+              radial-gradient(right, ellipse, rgba(255,89,103, .2) 0%, rgba(255,166,71, 0) 75%) 100% center;
+  background-size: 10px 100%, 10px 100%;
+  background-attachment: scroll, scroll;
+  background-repeat: no-repeat;
+}
+
+.tables td:first-child {
+  background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-size: 20px 100%;
+}
+
+.tables td:last-child {
+  background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 20px 100%;
 }
 
 .video-wrapper ~ .img-container-2,
