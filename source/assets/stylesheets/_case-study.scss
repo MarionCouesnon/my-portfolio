@@ -48,7 +48,7 @@
     @include grid-container($custom-grid-large);
   }
 
-  img {
+  a {
     @include grid-column(6);
     margin-bottom: 1rem;
     &:last-of-type {
@@ -194,4 +194,34 @@ $img-gallery-small: (
   @media (min-width: 1200px) {
     max-width: 55%;
   }
+}
+
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
+#imagelightbox-overlay {
+			background: linear-gradient(135deg, $orange, $red);
+      visibility: visible;
+			opacity: 0.7;
+			position: fixed;
+			z-index: 9998;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+      transition: visibility 1s, opacity 1s;
+
+      &.tic {
+        visibility: hidden;
+        opacity: 0;
+      }
+}
+
+.noscroll {
+  overflow: hidden;
 }
