@@ -32,7 +32,8 @@ $custom-grid-small: (
     .hero-container,
     .case-summary-container,
     .contacts-container,
-    .case-study-container {
+    .case-study-container,
+    .projects-container {
       @include grid-column(10);
       @include grid-shift(1);
     }

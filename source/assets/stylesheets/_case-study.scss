@@ -29,11 +29,26 @@
 }
 
 .img-container-3 {
-  @include grid-container($custom-grid-large);
+  @include grid-container($custom-grid-small);
+
+  @media (min-width: 700px) {
+    @include grid-container($custom-grid-medium);
+  }
   @include grid-collapse;
 
-  img {
-    @include grid-column(4);
+  a {
+    @include grid-column(6);
+    margin-bottom: 1rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 700px) {
+      @include grid-column(4);
+      &:nth-of-type(n+10){
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -89,7 +104,6 @@
      display: block;
    }
 }
-
 
 td,
 th {
