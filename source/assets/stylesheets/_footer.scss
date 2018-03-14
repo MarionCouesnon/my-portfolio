@@ -2,43 +2,49 @@ footer {
   background: no-repeat linear-gradient(135deg, $orange, $red);
   background-size: cover;
   width: 100%;
-  padding: $base-line-height/2 0;
+  padding: $small-spacing 0;
 
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     padding: 0;
   }
+}
 
-  h2,
-  p,
-  a {
+.contacts-container {
+  margin: $base-spacing 0 $small-spacing * 3;
+
+  & h2, p, a {
     color: $white;
   }
 
-  .contacts-container {
-    margin-bottom: $base-line-height;
+  @media (min-width: 704px) {
+    margin: $small-spacing * 3 0 $base-spacing * 2;
   }
 }
 
 #green:active,
 #green:focus,
 #green:hover {
-  color: $green;
+  color: ForestGreen;
 }
 
 #yellow:active,
 #yellow:focus,
 #yellow:hover {
-  color: $yellow;
+  color: Gold;
 }
 
 #blue:active,
 #blue:focus,
 #blue:hover {
-  color: $blue;
+  color: DodgerBlue;
 }
 
 #purple:active,
 #purple:focus,
 #purple:hover {
-  color: $purple;
+  color: MediumOrchid;
+}
+
+.credit {
+  font-family: $alt-font-family;
 }

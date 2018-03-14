@@ -1,8 +1,8 @@
 .hero {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  align-items: baseline;
+  height: 100%;
+  color: $secondary-font-color;
 
   background: linear-gradient(135deg, $orange, $red);
   background-size: 250% 250%;
@@ -28,41 +28,42 @@
   }
 }
 
+.hero-container {
+  margin: $small-spacing * 5 0;
+
+  @media (min-width: 704px) {
+    margin: $base-spacing * 5 0;
+  }
+
+  @media (min-width: 1020px) {
+    margin: $base-spacing * 10 0;
+  }
+
+}
+
 .logo-container {
-  margin: $base-line-height * 2 0;
+  margin: 0 0 $small-spacing;
+
+  @media (min-width: 704px) {
+    margin: 0 0 $base-spacing;
+  }
 }
 
 .logo-name,
 .logo-baseline {
-  color: $white;
   text-align: center;
+  margin: 0;
 }
 
 .logo-name {
   font-family: $heading-font-family;
-  margin-bottom: 0;
-  text-transform: uppercase;
-  font-size: 1.12em;
-  line-height: $base-line-height * 0.5;
+}
 
-  @media (min-width: 700px) {
-    font-size: 1.388em;
-  }
+.announcement,
+.logo-baseline {
+  font-family: $secondary-heading-font-family;
 }
 
 .logo-baseline {
-  font-family: $alt-font-family;
-  font-size: 0.8em;
-  font-weight: normal;
-
-  @media (min-width: 700px) {
-    font-size: 1em;
-  }
-}
-
-.intro {
-  color: $white;
-  font-size: $base-font-size * 1.05;
-  line-height: $base-line-height * 1.025;
-  text-align: center;
+  line-height: $base-line-height * 2;
 }

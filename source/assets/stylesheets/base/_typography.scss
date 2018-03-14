@@ -2,6 +2,7 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+  color:$base-font-color;
 }
 
 h1,
@@ -10,21 +11,20 @@ h3,
 h4,
 h5,
 h6 {
-  color:$red;
   font-family: $heading-font-family;
   font-size: $base-font-size;
-  line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  line-height: $base-line-height;
+  margin: 0;
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: $small-spacing 0 $base-spacing;
 }
 
-a {
-  color: $action-color;
+a:not(.button),
+a > :not(.fa) {
+  color: $base-font-color;
   text-decoration-line: none;
-  text-decoration-color:$action-color;
   transition: color $base-duration $base-timing;
 
   &:active,

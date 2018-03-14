@@ -4,27 +4,30 @@ title: Marion Couesnon Portfolio
 
 <div class="hero">
   <div class="grid-container">
-    <div class="case-summary-container">
+    <div class="hero-container">
       <div class="logo-container">
-        <p class="logo-name">marion couesnon</p>
+        <p class="logo-name">Marion Couesnon</p>
         <p class="logo-baseline">hyperactive designer</p>
       </div>
       <div class="intro-container">
-        <p class="intro">Hi there! I’m an interaction designer. My skills are shared between UX, UI and coding. My aim is to create delightful and useful products for innovative companies.</p>
+        <h1 class="intro">Hi there! I’m an interaction designer. My skills are shared between UX, UI and coding. My aim is to create delightful and useful products for innovative companies.</h1>
+        <p class="announcement">And I am currently available for work!</p>
       </div>
     </div>
   </div>
 </div>
 
 <div class="grid-container">
-  <div class="case-summary-container">
-    <h1 class="title">Case studies</h1>
-    <div class="case-wrapper">
+  <section>
+    <h3>Case studies</h3>
+    <article>
       <% link_to '/deadline' do %>
       <%= image_tag 'deadline/201702_MD_Salone-Ludico_Deadline_HEAD_MichelGiesbrecht_001.jpg' %>
       <% end %>
+      <!--
       <p class="legend">Photograph from Michel Giesbrecht</p>
-      <h2 class="case-name"><% link_to '/deadline' do %>Deadline<% end %></h2>
+      -->
+      <h2><% link_to '/deadline' do %>Deadline<% end %></h2>
       <div class="summary-container">
         <ul class="summary-info-wrapper">
           <li><span>Date:</span> april 2017</li>
@@ -37,18 +40,15 @@ title: Marion Couesnon Portfolio
         </p>
       </div>
       <div class="goto">
-        <% link_to '/deadline' do %>See project
-          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-        <% end %>
+        <% link_to '/deadline', class: "button", role: "button" do %>Read case study<% end %>
       </div>
-    </div>
+    </article>
 
-    <div class="case-wrapper">
+    <article>
       <% link_to '/mealcanteen' do %>
-      <%= image_tag 'meal-canteen/meal-canteen-logo.jpg' %>
+      <%= image_tag 'meal-canteen/meal-canteen-hero.png' %>
       <% end %>
-      <p class="legend">Logo made by <% link_to 'https://dribbble.com/laurentholdrinet' do %>Laurent Holdrinet<% end %></p>
-      <h2 class="case-name"><% link_to '/mealcanteen' do %>Meal Canteen<% end %></h2>
+      <h2><% link_to '/mealcanteen' do %>Meal Canteen<% end %></h2>
       <div class="summary-container">
         <ul class="summary-info-wrapper">
           <li><span>Date:</span> april 2016</li>
@@ -57,21 +57,19 @@ title: Marion Couesnon Portfolio
           <li><span>Team:</span> <% link_to 'https://github.com/mehlah' do %> Mehdi Lahmam<% end %></li>
           <li><span>Tools:</span> sketch, bourbon, git</li>
         </ul>
-        <p class="summary-text-wrapper"><% link_to 'https://mealcanteen.com/' do %>Meal Canteen<% end %> is a start-up whose ambition is to reduce food waste in institutional catering and school canteens. Thanks to an application for web and mobile platforms, users have the possibility to book in advance the meals they will eat during working days. I took part in this project during my apprenticeship in master degree <% link_to 'http://dsaa.designvillefontaine.com/' do %>(DSAA)<% end %>. It gave me the opportunity to get involved in the process of building a start-up from scratch to an MVP. My work has also included organising user interviews, A/B testings, and building wireframes for iPhone following iOS guidelines.
+        <p class="summary-text-wrapper"><% link_to 'https://mealcanteen.com/' do %>Meal Canteen<% end %> is a start&#8208;up whose ambition is to reduce food waste in institutional catering and school canteens. Thanks to an application for web and mobile platforms, users have the possibility to book in advance the meals they will eat during working days. I took part in this project during my apprenticeship in master degree <% link_to 'http://dsaa.designvillefontaine.com/' do %>(DSAA)<% end %>. It gave me the opportunity to get involved in the process of building a start-up from scratch to an MVP. My work has also included organising user interviews, A/B testings, and building wireframes for iPhone following iOS guidelines.
         </p>
       </div>
       <div class="goto">
-        <% link_to '/mealcanteen' do %>See project
-          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-        <% end %>
+        <% link_to '/mealcanteen', class: "button", role: "button" do %>Read case study<% end %>
       </div>
-    </div>
+    </article>
 
-    <div class="case-wrapper">
+    <article>
       <% link_to '/hypertext' do %>
         <%= image_tag 'hypertext/repro-fev-2017_046.jpg' %>
       <% end %>
-      <h2 class="case-name"><% link_to '/hypertext' do %>From Pandora to Post-it, an empirical exploration of the hypertext<% end %></h2>
+      <h2><% link_to '/hypertext' do %>From Pandora to Post-it, an empirical exploration of the hypertext<% end %></h2>
       <div class="summary-container">
         <ul class="summary-info-wrapper">
           <li><span>Date:</span> february 2017</li>
@@ -85,18 +83,18 @@ title: Marion Couesnon Portfolio
         </p>
       </div>
       <div class="goto">
-        <% link_to '/hypertext' do %>See project
-          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-        <% end %>
+        <% link_to '/hypertext', class: "button", role: "button" do %>Read case study<% end %>
       </div>
-    </div>
+    </article>
 
-    <div class="case-wrapper">
+    <article>
       <% link_to '/crossroads' do %>
         <%= image_tag 'crossroads/repro-jun-17.jpg' %>
       <% end %>
+      <!--
       <p class="legend">Photographs from <% link_to 'http://www.localf11.ch/baptiste-coulon/' do %>Baptiste Coulon<% end %></p>
-      <h2 class="case-name"><% link_to '/crossroads' do %>Crossroads<% end %></h2>
+      -->
+      <h2><% link_to '/crossroads' do %>Crossroads<% end %></h2>
       <div class="summary-container">
         <ul class="summary-info-wrapper">
           <li><span>Date:</span> june 2017</li>
@@ -106,19 +104,18 @@ title: Marion Couesnon Portfolio
           <li><span>Thanks to:</span> <% link_to 'http://www.kevinvennitti.com/' do %>Kévin Vennitti<% end %>, <% link_to 'http://felicien.io/' do %>Félicien Goguey<% end %> and <% link_to 'http://et-nd.co/' do %>Étienne Ndiaye<% end %></li>
           <li><span>Tools:</span> sketchup, illustrator, javascript, bourbon, dot and pstoedit</li>
         </ul>
-        <p class="summary-text-wrapper">Crossroads is the graduation project I have made for my master at <% link_to 'https://www.hesge.ch/head/en/programs-research/master-arts-media-design' do %>HEAD—Genève<% end %>. After the publication of their thesis, students have to realise a practical project based on their theoretical research. My thesis was concerned with the structure of the hypertext. To get an understanding of its underlying logic, I have built a method based on <% link_to 'https://en.wikipedia.org/wiki/Wikiracing' do %>wikiraces<% end %>, and the paths followed by people through hyperlinks when playing this game. I consequently imagined an interactive installation to automate the process of collecting data. Users are invited to play a wikirace, and, upon winning, they can collect their plotter-printed journey and display it in the exhibition.
+        <p class="summary-text-wrapper">Crossroads is the graduation project I have made for my master at <% link_to 'https://www.hesge.ch/head/en/programs-research/master-arts-media-design' do %>HEAD—Genève<% end %>. After the publication of their thesis, students have to realise a practical project based on their theoretical research. My thesis was concerned with the structure of the hypertext. To get an understanding of its underlying logic, I have built a method based on <% link_to 'https://en.wikipedia.org/wiki/Wikiracing' do %>wikiraces<% end %>, and the paths followed by people through hyperlinks when playing this game. I consequently imagined an interactive installation to automate the process of collecting data. Users are invited to play a wikirace, and, upon winning, they can collect their plotter&#8208;printed journey and display it in the exhibition.
         </p>
       </div>
       <div class="goto">
-        <% link_to '/crossroads' do %>See project
-          <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-        <% end %>
+        <% link_to '/crossroads', class: "button", role: "button" do %>Read case study<% end %>
       </div>
-    </div>
-  </div>
-  <div class="projects-container">
-    <h1 class="title">Projects</h1>
-    <p>This is an overview of projects I've been involved in. For more information, please <a href="mailto:marioncouesnon@gmail.com">contact me.</a></p>
+    </article>
+  </section>
+
+  <section>
+    <h3>Projects</h3>
+    <p class="details">This is an overview of projects I've been involved in. For more information, please <a href="mailto:marioncouesnon@gmail.com">contact me.</a></p>
     <div class="img-container-3">
       <a class="zoomIn" href="/assets/images/projects/jfx.jpg">
         <%= image_tag 'projects/jfx.jpg' %>
@@ -157,5 +154,5 @@ title: Marion Couesnon Portfolio
         <%= image_tag 'projects/klynt.jpg' %>
       </a>
     </div>
-  </div>
+  </section>
 </div>

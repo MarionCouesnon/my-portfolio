@@ -5,35 +5,47 @@ layout: case-study
 <div class="grid-container">
   <div class="case-study-container">
     <h1>Meal Canteen</h1>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/ibG0y6KyrJE?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <p class="legend">Video explaining how the product works. It was made a few months after we launched the MVP.</p>
     <div class="desc-wrapper">
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/ibG0y6KyrJE?ecver=2" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-      <p class="legend">Video explaining how the product works. It was made a few months after we launched the MVP.</p>
-
-      <h2>How to launch a start-up project from scratch?</h2>
-      <p>When a start-up project is only an idea, it’s easy to speculate about what it may become. What will be its feature, its market, its public, etc. During my apprenticeship, I was taught the first step to take is to identify the core value of the product and start prototyping it in order to ask questions. Having a prototype, even in the roughest form, is helpful to focus on usability and functionality rather than staying conceptual. Therefore, my first mission for Meal Canteen has been to understand if adding visual elements to the dish options would prove useful in overall experience. The project owner wanted to use photographs to get people interested in the application. From my point of view, I was wondering how to gather and integrate all these pictures. We searched for image banks, but it seemed either too expensive, or the quality was too low compared to what we had in mind. So my boss asked me to find alternatives.
+      <h2>How to launch a start&#8208;up project from scratch?</h2>
+      <p>When a start&#8208;up project is only an idea, it’s easy to speculate about what it may become. What will be its feature, its market, its public, etc. During my apprenticeship, I was taught the first step to take is to identify the core value of the product and start prototyping it in order to ask questions. Having a prototype, even in the roughest form, is helpful to focus on usability and functionality rather than staying conceptual. Therefore, my first mission for Meal Canteen has been to understand if adding visual elements to the dish options would prove useful in overall experience. The project owner wanted to use photographs to get people interested in the application. From my point of view, I was wondering how to gather and integrate all these pictures. We searched for image banks, but it seemed either too expensive, or the quality was too low compared to what we had in mind. So my boss asked me to find alternatives.
       </p>
     </div>
 
     <div class="desc-wrapper">
       <h2>Crafting several graphic design proposals</h2>
       <p>I made two proposals. The first one made use of colour illustrations to draw the users’ attention. But a problem quickly appeared: how to create illustrations for every single possible dish.</p>
-      <%= image_tag 'meal-canteen/set-1.jpg', class:'img-full' %>
-      <%= image_tag 'meal-canteen/set-1-mobile.jpg', class:'img-small' %>
+      <a class="zoomIn" href="/assets/images/meal-canteen/set-1.jpg">
+        <%= image_tag 'meal-canteen/set-1.jpg', class:'img-full' %>
+      </a>
+      <a class="zoomIn" href="/assets/images/meal-canteen/set-1-mobile.jpg">
+        <%= image_tag 'meal-canteen/set-1-mobile.jpg', class:'img-small' %>
+      </a>
       <p class="legend">Some illustrations for proposal №1.</p>
       <p> In response to this problem, the second proposal was to generate an icon library where elements would be combined in order to create a custom icon for every dish. I then used HTML/CSS to implement these two proposals along with a third one with no visual elements, and adding each of them to the prototype using Git. 
       </p>
-      <%= image_tag 'meal-canteen/set-2.jpg', class:'img-full' %>
-      <%= image_tag 'meal-canteen/set-2-mobile.jpg', class:'img-small' %>
+      <a class="zoomIn" href="/assets/images/meal-canteen/set-2.jpg">
+        <%= image_tag 'meal-canteen/set-2.jpg', class:'img-full' %>
+      </a>
+      <a class="zoomIn" href="/assets/images/meal-canteen/set-2-mobile.jpg">
+        <%= image_tag 'meal-canteen/set-2-mobile.jpg', class:'img-small' %>
+      </a>
       <p class="legend">Some icons for proposal №2.</p>
     </div>
 
     <div class="desc-wrapper">
-      <h2>Testing, understanding and making decisions : from preconceptions to convictions</h2>
+      <h2>Testing, understanding and making decision: from preconceptions to convictions</h2>
       <p>Afterwards, we organised a testing session with several children registered to the school canteen. The sample group was pretty wide, but all of the kids were living in town. Some kids had no choice but to eat in the canteen whereas other had permission to have lunch in town. Interviewing them helped me understand their vision, their opinion and their habits in relation to lunch. We approached topics such as their favourite food and their parents recommendations in terms of diet. Then, I launched the A/B testing session with the three proposals I had created.</p>
-      <%= image_tag('meal-canteen/piste-1.jpg')%>
-      <%= image_tag('meal-canteen/piste-2.jpg', class:'img-spacing')%>
+      <a class="zoomIn" href="/assets/images/meal-canteen/piste-1.jpg">
+        <%= image_tag 'meal-canteen/piste-1.jpg' %>
+      </a>
+
+      <a class="zoomIn" href="/assets/images/meal-canteen/piste-2.jpg">
+        <%= image_tag 'meal-canteen/piste-2.jpg', class:'img-spacing' %>
+      </a>
       <p class="legend">The two proposals shaped as a component of the web application.</p>
       <p>Asking the kids to comment on their actions and feelings using the app, it appeared to me that, for them, visual elements were more disturbing than anything else. They were trying to identify dishes, but not always managed to do it. The experience became sometimes frustrating because of it. Eventually, I wrote a report gathering my observations, recommending to not use any visual element for this specific component at this stage, in order to improve readability and make the choice between dishes easier for the users.
       </p>
@@ -41,17 +53,36 @@ layout: case-study
 
     <div class="desc-wrapper">
       <h2>Getting accustomed to iOS application building</h2>
-      <p>My second mission was to wireframe the iOS app based on Apple guidelines. It was the occasion to use iOS guidelines and resources as well as to train myself to use Sketch. This work is partly under non-disclosure agreement.
+      <p>My second mission was to wireframe the iOS app based on Apple guidelines. It was the occasion to use iOS guidelines and resources as well as to train myself to use Sketch.
       </p>
       <div class="img-container-3">
-        <a class="zoomIn" href="/assets/images/meal-canteen/next-meals.jpg">
-          <%= image_tag('meal-canteen/next-meals.jpg')%>
+        <a class="zoomIn" href="/assets/images/meal-canteen/next-meals.png">
+          <%= image_tag 'meal-canteen/next-meals.png' %>
         </a>
-        <a class="zoomIn" href="/assets/images/meal-canteen/choose-dish.jpg">
-          <%= image_tag('meal-canteen/choose-dish.jpg')%>
+        <a class="zoomIn" href="/assets/images/meal-canteen/choose-dish.png">
+          <%= image_tag 'meal-canteen/choose-dish.png' %>
         </a>
-        <a class="zoomIn" href="/assets/images/meal-canteen/food-cart.jpg">
-          <%= image_tag('meal-canteen/food-cart.jpg')%>
+        <a class="zoomIn" href="/assets/images/meal-canteen/food-cart.png">
+          <%= image_tag 'meal-canteen/food-cart.png' %>
+        </a>
+      </div>
+      <p class="legend">Wireframes to which I applied iOS guidelines.</p>
+      <p>After I wireframed the MVP, we started to turn screens into UI. We made several versions, but finally, we implemented a minimalist UI. We decided to do so because we thought it would be easier to add branding elements once they would have been defined.</p>
+
+      <a class="zoomIn" href="/assets/images/meal-canteen/UI-digression.png">
+        <%= image_tag 'meal-canteen/UI-digression.png' %>
+      </a>
+      <p class="legend">One of the UI concept we have given up.</p>
+
+      <div class="img-container-3">
+        <a class="zoomIn" href="/assets/images/meal-canteen/final-1.png">
+          <%= image_tag 'meal-canteen/final-1.png' %>
+        </a>
+        <a class="zoomIn" href="/assets/images/meal-canteen/final-2.png">
+          <%= image_tag 'meal-canteen/final-2.png' %>
+        </a>
+        <a class="zoomIn" href="/assets/images/meal-canteen/final-3.png">
+          <%= image_tag 'meal-canteen/final-3.png' %>
         </a>
       </div>
       <p class="legend">A few key screens of the very first version of the app.</p>

@@ -5,27 +5,32 @@ layout: case-study
 <div class="grid-container">
   <div class="case-study-container">
     <h1>Deadline</h1>
+    <div class="video-wrapper">
+      <iframe src="https://player.vimeo.com/video/209746557?color=ff9933&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="video"></iframe>
+    </div>
+    <p class="legend">Video from <% link_to 'http://vincentdevevey.com/' do %>Vincent de Vevey<% end %></p>
     <div class="desc-wrapper">
-      <div class="video-wrapper">
-        <iframe src="https://player.vimeo.com/video/209746557?color=ff9933&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="video"></iframe>
-      </div>
-      <p class="legend">Video from <% link_to 'http://vincentdevevey.com/' do %>Vincent de Vevey<% end %></p>
       <h2>Rules of the game</h2>
       <p>Each player receives six cards at the beginning of the game. “SMS” cards are attack cards, they allow players to block opponents who then have to use “phone call” cards, to unlock themselves. When players are attacked, they need to defend themselves with a card of the same colour as the one used against them. When a player attacks by sending a “SMS” card, the text message it contains must always be read out loud upon placing the card. Thus, attacking is always done at the expense of precious seconds of a player’s round. The application, displayed at the center of the table, is an important part of the game. It features a calendar showing the remaining amount of time before the deadline. It also gives players access to their personal checklist and allows them to progress through their mission. The application analyses every participant’s progress in real-time and adapts the amount of obstacles each player will face accordingly. In the end, the best strategy may not be to constantly lead the game…
       </p>
+      <a class="zoomIn" href="/assets/images/deadline/deadline-comm.jpg">
+        <%= image_tag 'deadline/deadline-comm.jpg' %>
+      </a>
+      <p class="legend">First Deadline prototype, before I started working on the project.</p>
     </div>
 
     <div class="desc-wrapper">
-      <%= image_tag 'deadline/deadline-comm.jpg' %>
-      <p class="legend">First Deadline prototype, before I started working on the project.</p>
-
       <h2>Hybrid game challenge: how to balance the gameplay between two different touchpoints?</h2>
 
       <p>When I began to work on this project, the first issue that appeared to me was how to equally distribute players’ attention between the card game and the interface. At that moment, the interface was nothing more than a timer and most of the game took place with the card game.</p>
 
       <div class="img-container-2">
-        <%= image_tag 'deadline/old-deadline-interface.jpg' %>
-        <%= image_tag 'deadline/old-deadline-interface-2.jpg' %>
+        <a class="zoomIn" href="/assets/images/deadline/old-deadline-interface.jpg">
+          <%= image_tag 'deadline/old-deadline-interface.jpg' %>
+        </a>
+        <a class="zoomIn" href="/assets/images/deadline/old-deadline-interface-2.jpg">
+          <%= image_tag 'deadline/old-deadline-interface-2.jpg' %>
+        </a>
       </div>
       <p class="legend">The two main interfaces of the older version.</p>
 
@@ -41,16 +46,20 @@ layout: case-study
   <div class="case-study-container">
     <p class="legend">I defined a user journey where the interface is much more in control of the game.</p>
     <div class="desc-wrapper">
-      <h2>Why designing a circle-shaped interface?</h2>
-      <p>In terms of UX and graphic design, my main challenge was to make every single element fit inside a circle-shaped interface. However, the choice of that specific shape wasn’t a random one. It was the most logical choice to resolve two significant constraints: First of all, the game is about dealing with time when your job is to be a graphic designer. By analogy, a circle-shaped interface makes this relation to time much more explicit.</p>
+      <h2>Why designing a circle&#8208;shaped interface?</h2>
+      <p>In terms of UX and graphic design, my main challenge was to make every single element fit inside a circle&#8208;shaped interface. However, the choice of that specific shape wasn’t a random one. It was the most logical choice to resolve two significant constraints: First of all, the game is about dealing with time when your job is to be a graphic designer. By analogy, a circle-shaped interface makes this relation to time much more explicit.</p>
       <div class="img-item">
-        <%= image_tag 'deadline/task-interface-evolution.gif' %>
+        <a class="zoomIn" href="/assets/images/deadline/task-interface-evolution.gif">
+          <%= image_tag 'deadline/task-interface-evolution.gif' %>
+        </a>
       </div>
       <p class="legend">Evolutions of “the task selection” interface.</p>
 
       <p>Secondly, the experience is collective: 3 to 4 players have to sit around a table. A rectangular interface would be too complex in that specific context, because it suggests a reading direction to players without taking into account their distribution around the table. On the other hand, a circle-shaped interface suggests the possibility to rotate the interface without forcing people to move around it or having to manipulate the device in the required direction.</p>
 
-      <%= image_tag 'deadline/201702_MD_Salone-Ludico_DeadlineHEAD_MichelGiesbrecht_003.jpg' %>
+      <a class="zoomIn" href="/assets/images/deadline/201702_MD_Salone-Ludico_DeadlineHEAD_MichelGiesbrecht_003.jpg">
+        <%= image_tag 'deadline/201702_MD_Salone-Ludico_DeadlineHEAD_MichelGiesbrecht_003.jpg' %>
+      </a>
       <p class="legend">Photograph from Michel Giesbrecht showing the context in which the application is being used.</p>
     </div>
 
@@ -84,35 +93,35 @@ layout: case-study
 
     <div class="img-grid">
       <div class="img-grid-item">
-        <%= image_tag('deadline/icon-1.png', class:'img-item')%>
+        <%= image_tag 'deadline/icon-1.png', class:'img-item'%>
         <p class="grid-legend">Analyse data</p>
       </div>
       <div class="img-grid-item">
-        <%= image_tag('deadline/icon-2.png', class:'img-item')%>
+        <%= image_tag 'deadline/icon-2.png', class:'img-item'%>
         <p class="grid-legend">Outline user journey</p>
       </div>
       <div class="img-grid-item">
-        <%= image_tag('deadline/icon-3.png', class:'img-item')%>
+        <%= image_tag 'deadline/icon-3.png', class:'img-item'%>
         <p class="grid-legend">Create styleguide</p>
       </div>
       <div class="img-grid-item">
-        <%= image_tag('deadline/icon-4.png', class:'img-item')%>
+        <%= image_tag 'deadline/icon-4.png', class:'img-item'%>
         <p class="grid-legend">Prototype animation</p>
       </div>
       <div class="img-grid-item">
-        <%= image_tag('deadline/icon-5.png', class:'img-item')%>
+        <%= image_tag 'deadline/icon-5.png', class:'img-item'%>
         <p class="grid-legend">Shorten video</p>
       </div>
       <div class="img-grid-item">
-        <%= image_tag('deadline/icon-6.png', class:'img-item')%>
+        <%= image_tag 'deadline/icon-6.png', class:'img-item'%>
         <p class="grid-legend">Test layout</p>
       </div>
       <div class="img-grid-item">
-        <%= image_tag('deadline/icon-7.png', class:'img-item')%>
+        <%= image_tag 'deadline/icon-7.png', class:'img-item'%>
         <p class="grid-legend">Choose color</p>
       </div>
       <div class="img-grid-item">
-        <%= image_tag('deadline/icon-8.png', class:'img-item')%>
+        <%= image_tag 'deadline/icon-8.png', class:'img-item'%>
         <p class="grid-legend">Search for datavis types</p>
       </div>
     </div>
@@ -120,7 +129,9 @@ layout: case-study
 
     <p>Giving the application a sharp and practical aspect was a conscious choice for another reason: it had to make one with the piece of furniture it is embedded in. The only contrast with the neutral colours of the application is the seldom use of red, appearing here and there to emphasise stressful situations. To balance this overall “serious” feel, i proposed to give the interface some kind of personality. Hence, it is not impossible that the application starts messing around with some of the players. There is no turn direction as well, as it is also the application that randomly decides who is going to play next. This personality we have created is also underlined through motion design elements, such as in the way missions are assigned, or messages appear.</p>
 
-    <%= image_tag 'deadline/dialog-01.jpg' %>
+    <a class="zoomIn" href="/assets/images/deadline/dialog-01.jpg">
+      <%= image_tag 'deadline/dialog-01.jpg' %>
+    </a>
     <p class="legend">The personality of the interface can also be noticed in the way it “talks” to the player.</p>
     </div>
     <div class="nav-container">

@@ -1,8 +1,15 @@
+.Adagio_Sans-Medium {
+	font-family: Adagio_Sans-Medium;
+	font-weight: normal;
+	font-style: normal;
+}
+
 .Adagio_Sans-Regular {
 	font-family: Adagio_Sans-Regular;
 	font-weight: normal;
 	font-style: normal;
 }
+
 .Adagio_Sans-Regular_italic {
 	font-family: Adagio_Sans-Regular_italic;
 	font-weight: normal;
@@ -14,76 +21,105 @@
 	font-style: normal;
 }
 
-$modular-scale-ratio: $minor-third;
-$base-line-height: 1.45em;
-$base-font-size: 1.37em;
-
-body {
-	font-size: 1em;
-	line-height: $base-line-height;
-
-	@media (min-width: 700px) {
-		font-size: 1.12em;
-		line-height: $base-line-height;
-	}
-
-	@media (min-width: 1200px) {
-		font-size: $base-font-size;
-		line-height: $base-line-height;
-	}
-}
-
 h1 {
-	font-size: 1.728em;
-	margin: $base-line-height/2 0 $base-line-height/4;
+	font-size: $h1-font-size;
+	line-height: $h1-line-height;
 
-	@media (min-width: 700px) {
-		font-size: 2.48em;
-		margin: $base-line-height 0 $base-line-height/2;
+	@media (min-width: 704px) {
+		font-size: $h1-font-size * 1.2;
+		line-height: $base-line-height * 6;
+	}
+
+	@media (min-width: 1020px) {
+		font-size: $h1-font-size * 1.2 * 1.2;
+		line-height: $base-line-height * 7;
 	}
 }
 
 h2 {
-	font-size: 1.388em;
-	margin: $base-line-height/2 0 $base-line-height/4;
+	font-size: $h2-font-size;
+	line-height: $h2-line-height;
 
-	@media (min-width: 700px) {
-		font-size: 1.728em;
-		margin: $base-line-height/2 0 $base-line-height/4;
+	@media (min-width: 704px) {
+		font-size: $h1-font-size;
+		line-height: $h1-line-height;
+	}
+
+	@media (min-width: 1020px) {
+		font-size: $h1-font-size * 1.2;
+		line-height: $base-line-height * 6;
 	}
 }
 
-p {
-	margin-bottom: $base-line-height/2;
+a + h2 {
+	margin-top: $small-spacing;
+
+	@media (min-width: 704px) {
+		margin-top: $base-spacing;
+	}
 }
 
+h3 {
+	font-size: $h3-font-size;
+	line-height: $h3-line-height;
+	text-transform: uppercase;
+	letter-spacing: 0.01em;
+
+	@media (min-width: 704px) {
+		font-size: $p-font-size;
+		line-height: $base-line-height * 4;
+		margin-bottom: $small-spacing;
+
+	}
+
+	@media (min-width: 1020px) {
+		margin-bottom: $base-spacing;
+	}
+}
+
+body {
+	font-size: $p-font-size;
+	line-height: $p-line-height;
+
+	@media (min-width: 704px) {
+		font-size: $p-font-size * 1.2;
+		line-height: $base-line-height * 4;
+	}
+}
+
+.logo-baseline,
 .legend,
 .grid-legend,
 li,
 .credits {
-	font-size: 0.8em;
+	font-size: $sub-font-size;
+	line-height: $sub-line-height;
+	font-family: Adagio_Sans-Regular;
 
-	@media (min-width: 700px) {
-		font-size: 0.9rem;
+	@media (min-width: 704px) {
+		font-size: $p-font-size;
+		line-height: $base-line-height * 4;
 	}
-
-	@media (min-width: 1200px) {
-		font-size: 1rem;
-	}
+  //
+	// @media (min-width: 1200px) {
+	// 	font-size: $base-font-size;
+	// 	line-height: $base-font-size * 1.25 * 1.5;
+	// }
 }
 
 .legend {
-	color: $medium-gray;
-	margin: $base-line-height/2 0;
+	margin: $small-spacing 0 0;
+}
+
+.legend + .img-container-3 {
+	margin-top: $base-spacing;
 }
 
 span {
-	font-weight: bold;
-	color: $red;
+	font-family: Adagio_Sans-Medium;
 }
 
 .grid-legend {
-	color: $dark-gray;
 	text-align: center;
 	margin-bottom: 0;
 }

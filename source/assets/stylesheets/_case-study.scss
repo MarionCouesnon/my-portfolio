@@ -1,28 +1,33 @@
-.info-container {
-  margin-bottom: $base-line-height;
+.case-study-container > h1 {
+  margin: $small-spacing * 9 0 $base-spacing;
 }
+
+.desc-wrapper {
+  margin: $base-spacing * 2 0;
+}
+
 
 .img-container-2 {
   @include grid-container($custom-grid-small);
   @include grid-collapse;
 
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     @include grid-container($custom-grid-large);
     @include grid-collapse;
   }
 
-  img {
+  a {
     @include grid-column(12);
-    margin-bottom: 1rem;
+    margin-bottom: $base-spacing;
     &:last-of-type {
       margin-bottom: 0;
     }
 
-    @media (min-width: 700px) {
+    @media (min-width: 704px) {
       @include grid-column(6);
       margin-bottom: 0;
       &:nth-of-type(n+3){
-        margin-top: 1rem;
+        margin-top: $base-spacing;
       }
     }
   }
@@ -31,19 +36,19 @@
 .img-container-3 {
   @include grid-container($custom-grid-small);
 
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     @include grid-container($custom-grid-medium);
   }
   @include grid-collapse;
 
   a {
     @include grid-column(6);
-    margin-bottom: 1rem;
+    margin-bottom: $base-spacing;
     &:last-of-type {
       margin-bottom: 0;
     }
 
-    @media (min-width: 700px) {
+    @media (min-width: 704px) {
       @include grid-column(4);
       &:nth-of-type(n+10){
         margin-bottom: 0;
@@ -55,7 +60,7 @@
 .img-container-4 {
   @include grid-container($custom-grid-small);
 
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     @include grid-container($custom-grid-medium);
   }
 
@@ -65,12 +70,12 @@
 
   a {
     @include grid-column(6);
-    margin-bottom: 1rem;
-    &:last-of-type {
+    margin-bottom: $base-spacing;
+    &:nth-of-type(n+11) {
       margin-bottom: 0;
     }
 
-    @media (min-width: 700px) {
+    @media (min-width: 704px) {
       @include grid-column(4);
       &:nth-of-type(n+10){
         margin-bottom: 0;
@@ -86,21 +91,37 @@
   }
 }
 
+a + .img-container-2 {
+  margin-top: $base-spacing;
+}
+
+.img-container-2 + :not(p) {
+  margin-bottom: $base-spacing;
+}
+
+.video-wrapper + .img-container-2 {
+  margin-top: $base-spacing;
+}
+
+.img-spacing {
+  margin: $base-spacing 0 0;
+}
+
 .full-width-img{
   max-width: 100%;
-  padding: 0 1rem;
+  padding: 0 $base-spacing;
 }
 
 .img-small {
    display: block;
-   @media (min-width: 700px) {
+   @media (min-width: 704px) {
      display: none;
    }
 }
 
 .img-full {
    display: none;
-   @media (min-width: 700px) {
+   @media (min-width: 704px) {
      display: block;
    }
 }
@@ -108,8 +129,8 @@
 td,
 th {
   text-align: left;
-  padding-left: 1rem;
-  @media (min-width: 700px) {
+  padding-left: $base-spacing;
+  @media (min-width: 704px) {
     text-align: center;
     padding-left: 0;
   }
@@ -120,7 +141,7 @@ th {
   overflow-x: auto;
   white-space: nowrap;
 
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     display: table;
     overflow-x: hidden;
   }
@@ -130,7 +151,7 @@ th {
   -webkit-overflow-scrolling: touch;
   background: radial-gradient(left, ellipse, rgba(255,89,103, .2) 0%, rgba(255,166,71, 0) 75%) 0 center,
               radial-gradient(right, ellipse, rgba(255,89,103, .2) 0%, rgba(255,166,71, 0) 75%) 100% center;
-  background-size: 10px 100%, 10px 100%;
+  background-size: 16px 100%, 10px 100%;
   background-attachment: scroll, scroll;
   background-repeat: no-repeat;
 }
@@ -138,36 +159,29 @@ th {
 .tables td:first-child {
   background-image: linear-gradient(to right, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
   background-repeat: no-repeat;
-  background-size: 20px 100%;
+  background-size: 24px 100%;
 }
 
 .tables td:last-child {
   background-image: linear-gradient(to left, rgba(255,255,255, 1) 50%, rgba(255,255,255, 0) 100%);
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-size: 20px 100%;
-}
-
-.video-wrapper ~ .img-container-2,
-.img-spacing,
-img ~ .img-container-2,
-.img-container-2 ~ img {
-  margin-top: 1rem;
+  background-size: 24px 100%;
 }
 
 $img-gallery: (
   columns: 4,
-  gutter: 1rem,
+  gutter: $base-spacing,
 );
 
 $img-gallery-medium: (
   columns: 3,
-  gutter: 1rem,
+  gutter: $base-spacing,
 );
 
 $img-gallery-small: (
   columns: 2,
-  gutter: 1rem,
+  gutter: $base-spacing,
 );
 
 .img-grid {
@@ -175,7 +189,7 @@ $img-gallery-small: (
   @include grid-container;
   width: 100%;
 
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     @include grid-collapse($img-gallery-medium);
   }
   @media (min-width: 1200px) {
@@ -186,7 +200,7 @@ $img-gallery-small: (
 .img-grid-item {
   @include grid-column(1, $img-gallery-small);
 
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     @include grid-column(1, $img-gallery-medium);
   }
 
@@ -201,7 +215,7 @@ $img-gallery-small: (
   margin-left: auto;
   margin-right: auto;
 
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     max-width: 70%;
   }
 

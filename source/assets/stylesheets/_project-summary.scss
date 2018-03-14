@@ -1,11 +1,22 @@
-.case-wrapper,
-.projects-container {
-  margin-bottom : 4em;
+section {
+  margin: $small-spacing * 9 0;
+  @media (min-width: 704px) {
+    margin: $base-spacing * 5 0;
+  }
+}
+
+article {
+  margin-bottom: $base-spacing * 4;
+
+  @media (min-width: 704px) {
+    margin-bottom: $small-spacing * 9;
+  }
 }
 
 .summary-container {
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     display: flex;
+    margin: $small-spacing 0 $small-spacing * 3;
     @include grid-collapse;
 
     .summary-info-wrapper{
@@ -18,14 +29,23 @@
   }
 }
 
-ul {
-	margin-bottom: $base-line-height/2;
+.summary-text-wrapper {
+  @media (min-width: 704px) {
+   margin: 0;
+  }
+}
 
-	@media (min-width: 700px) {
-		margin-bottom: 0;
+.details {
+	margin-bottom: $small-spacing;
+
+	@media (min-width: 704px) {
+		margin-bottom: $base-spacing;
 	}
 }
 
 .goto {
-  text-align: right;
+  text-align: left;
+  @media (min-width: 704px) {
+    text-align: right;
+  }
 }

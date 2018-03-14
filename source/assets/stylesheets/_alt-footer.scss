@@ -1,16 +1,30 @@
 .social-media-container {
-  padding: 2rem 0 0;
+  padding: $base-spacing 0 $small-spacing;
+
+  @media (min-width: 704px) {
+    padding: $base-spacing 0 0;
+  }
 
   a:hover {
-    color: darken( $white, 5% );
+    color: $blue;
   }
+
   .fa {
-    font-size: 2rem;
-    padding-right: 1rem;
+    font-size: $h2-font-size;
+    padding-right: $small-spacing;
+
+    @media (min-width: 704px) {
+      font-size: $h1-font-size;
+    }
+
+    @media (min-width: 1020px) {
+      font-size: $h1-font-size * 1.2;
+      padding-right: $base-spacing;
+    }
   }
 
   .fa-heart {
-    font-size: 1rem;
+    font-size: $base-font-size;
     padding-right: 0;
   }
 }

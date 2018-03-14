@@ -2,7 +2,7 @@
 	@include grid-container($custom-grid-small);
 	@include grid-collapse;
 
-	@media (min-width: 700px) {
+	@media (min-width: 704px) {
 		@include grid-container($custom-grid-large);
 		@include grid-collapse;
 	}
@@ -18,7 +18,7 @@
 		margin-bottom: 0;
 	}
 
-	@media (min-width: 700px) {
+	@media (min-width: 704px) {
 		@include grid-column(6);
 		padding-bottom: 26.25%;
 			&:nth-of-type(n+3) {

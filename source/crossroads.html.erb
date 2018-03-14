@@ -10,58 +10,64 @@ layout: case-study
 
 <div class="img-container-4">
   <a class="zoomIn" href="/assets/images/crossroads/short-path-1.jpeg">
-    <%= image_tag('crossroads/short-path-1.jpeg')%>
+    <%= image_tag 'crossroads/short-path-1.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/short-path-2.jpeg">
-    <%= image_tag('crossroads/short-path-2.jpeg')%>
+    <%= image_tag 'crossroads/short-path-2.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/short-path-3.jpeg">
-    <%= image_tag('crossroads/short-path-3.jpeg')%>
+    <%= image_tag 'crossroads/short-path-3.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/short-path-4.jpeg">
-    <%= image_tag('crossroads/short-path-4.jpeg')%>
+    <%= image_tag 'crossroads/short-path-4.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/short-path-5.jpeg">
-    <%= image_tag('crossroads/short-path-5.jpeg')%>
+    <%= image_tag 'crossroads/short-path-5.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/short-path-6.jpeg">
-    <%= image_tag('crossroads/short-path-6.jpeg')%>
+    <%= image_tag 'crossroads/short-path-6.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/medium-path-1.jpeg">
-    <%= image_tag('crossroads/medium-path-1.jpeg')%>
+    <%= image_tag 'crossroads/medium-path-1.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/medium-path-2.jpeg">
-    <%= image_tag('crossroads/medium-path-2.jpeg')%>
+    <%= image_tag 'crossroads/medium-path-2.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/medium-path-3.jpeg">
-    <%= image_tag('crossroads/medium-path-3.jpeg')%>
+    <%= image_tag 'crossroads/medium-path-3.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/medium-path-4.jpeg">
-    <%= image_tag('crossroads/medium-path-4.jpeg')%>
+    <%= image_tag 'crossroads/medium-path-4.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/long-path-1.jpeg">
-    <%= image_tag('crossroads/long-path-1.jpeg')%>
+    <%= image_tag 'crossroads/long-path-1.jpeg'%>
   </a>
   <a class="zoomIn" href="/assets/images/crossroads/long-path-2.jpeg">
-    <%= image_tag('crossroads/long-path-2.jpeg')%>
+    <%= image_tag 'crossroads/long-path-2.jpeg'%>
   </a>
 </div>
 
 <div class="grid-container">
   <div class="case-study-container">
+    <p class="legend">Printed users journeys: the more steps, the less legible.</p>
     <div class="desc-wrapper">
-      <p class="legend">Printed users journeys: the more steps, the less legible.</p>
-
       <h2>From a user-centric method to an art installation</h2>
       <p>Working on this project helped me distance myself from the method I built for my thesis. I understood that organising user testings within a multiplayer game gives the advantage of collecting more data, but it can also create biases within users’ behaviours, partly due to the stress of a game that people play against each other. Besides, I was present to explain what wikiraces are during the testing stage, but I knew I won’t always be available to explain my project during the diploma exhibition. Thus, I decided to create an experience for one player at a time. It is composed of several steps: first, a website explains my approach, the rules of the wikirace and invites the player to choose a session. When selecting a session, the player is redirected to the corresponding starting point (Wikipedia page), and has to go to the end point (another Wikipedia page) only by clicking hyperlinks. Once the player managed his way to the end point, data is sent to the plotter which prints the journey he just went through. Then, the player gets his poster and can choose to keep it or install it in the scenography alongside the other journeys.
-      <%= image_tag 'crossroads/site-web-crossroads.png' %>
+      </p>
+      <a class="zoomIn" href="/assets/images/crossroads/site-web-crossroads.png">
+        <%= image_tag 'crossroads/site-web-crossroads.png' %>
+      </a>
       <p class="legend">Crossroads website I have coded.</p>
     </div>
 
     <div class="desc-wrapper">
       <h2>From an outdated technology to the central piece of a contemporary installation</h2>
       <p>To make my project a reality, my first move was to get <% link_to 'http://www.hpmuseum.net/display_item.php?hw=74' do %>a plotter HP 7475A<% end %>(1983). Then, my first mission was to make this old technology compatible with our current ones. So as to do that, I did researches on connectors to allow both devices to communicate. But then I was faced with the difficulty of finding plotter cartridges. I finally decided to modify the plotter and create my own adapter to allow different writing tools to be used. As it was my first time conceiving a 3D object and using a 3D printer, numerous trials and errors were necessary before finding the right material as well as the most optimal dimensions.</p>
-      <%= image_tag 'crossroads/proto.jpg' %>
+
+      <a class="zoomIn" href="/assets/images/crossroads/proto.jpg">
+      <%= image_tag 'crossroads/proto.jpg'%>
+      </a>
+
       <p class="legend">Several iterations I've 3D printed for the adapter of the plotter.</p>
       <p> The other problem I came across was about gathering, shaping and printing the data for each journey. First, with Kevin Vennitti, I modified the extension I had used during my thesis, so that once journeys are finished, they are uploaded to the computer in a format called DOT. Then, taking advices from my tutor Stéphanie Vilayphiou, I used <% link_to 'http://www.graphviz.org/' do %>Graphviz<% end %> to generate EPS from the DOT files. Finally, I used the tool <% link_to 'http://www.pstoedit.net/' do %>pstoedit<% end %> to convert those files to a language the plotter does understand, HPGL. Finally, Félicien Goguey built a script that automates the export of the files from DOT to EPS and finally HPGL.
       </p>
@@ -71,10 +77,18 @@ layout: case-study
         <iframe src="https://player.vimeo.com/video/228244608?color=ff9933&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="video"></iframe>
       </div>
       <div class="img-container-2">
-        <%= image_tag('crossroads/test.jpeg')%>
-        <%= image_tag('crossroads/test-1.jpeg')%>
-        <%= image_tag('crossroads/test-2.jpeg')%>
-        <%= image_tag('crossroads/test-3.jpeg')%>
+        <a class="zoomIn" href="/assets/images/crossroads/test.jpeg">
+          <%= image_tag 'crossroads/test.jpeg'%>
+        </a>
+        <a class="zoomIn" href="/assets/images/crossroads/test-1.jpeg">
+          <%= image_tag 'crossroads/test-1.jpeg'%>
+        </a>
+        <a class="zoomIn" href="/assets/images/crossroads/test-2.jpeg">
+          <%= image_tag 'crossroads/test-2.jpeg'%>
+        </a>
+        <a class="zoomIn" href="/assets/images/crossroads/test-3.jpeg">
+          <%= image_tag 'crossroads/test-3.jpeg'%>
+        </a>
       </div>
       <p class="legend">Plotter explorations</p>
     </div>
@@ -84,13 +98,19 @@ layout: case-study
       <p>Even though I wanted to make this experience as simple as possible, I knew the protocol remained complex for a public ; indeed, it involved notions probably unknown by this audience, such as hypertext or wikiraces. I was wondering how to guide the player through the experience without losing him on the way. So I created a directional scenography, to give people the intuition they knew where to go next. However, I took care of leaving some extra-space, so that everyone could find his their own path. Some audience members prefer to encounter the installation as observers rather than players: the project had to be an experience for them too.
       </p>
       <div class="img-container-2">
-        <%= image_tag('crossroads/cartel-1.jpeg')%>
-        <%= image_tag('crossroads/cartel-2.jpeg')%>
+        <a class="zoomIn" href="/assets/images/crossroads/cartel-1.jpeg">
+          <%= image_tag 'crossroads/cartel-1.jpeg'%>
+        </a>
+        <a class="zoomIn" href="/assets/images/crossroads/cartel-2.jpeg">
+          <%= image_tag 'crossroads/cartel-2.jpeg'%>
+        </a>
       </div>
       <p class="legend">Plotter-printed labels to explain how the installation works.</p>
 
       <p>Finally, in order to guide the player, I arranged posters and labels along the scenography. I printed them with a plotter so as to build a consistent aesthetic. As a result, in two days of exhibition, I gathered nearly a hundred journeys. It tends to prove the installation was both understandable and playable for the public.</p>
-      <%= image_tag 'crossroads/expo-diplome.jpg' %>
+      <a class="zoomIn" href="/assets/images/crossroads/expo-diplome.jpg">
+        <%= image_tag 'crossroads/expo-diplome.jpg' %>
+      </a>
       <p class="legend">People playing a wikiraces during the preview of the Media Design diploma exhibition.</p>
     </div>
     <div class="nav-container">

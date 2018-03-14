@@ -1,36 +1,36 @@
 $custom-grid-large: (
   columns: 12,
-  gutter: 32px,
-  media: 1189px,
+  gutter: 24px,
+  media: 1020px,
   color: rgba(#00d4ff, 0.25),
   direction: ltr,
 );
 
 $custom-grid-medium: (
   columns: 8,
-  gutter: 26px,
-  media: 946px,
+  gutter: 16px,
+  media: 944px,
   color: rgba(#00d4ff, 0.25),
   direction: ltr,
 );
 
 $custom-grid-small: (
   columns: 4,
-  gutter: 22px,
-  media: 319px,
+  gutter: 8px,
+  media: 320px,
   color: rgba(#00d4ff, 0.25),
   direction: ltr,
 );
 
 .grid-container {
   @include grid-container($custom-grid-small);
-  padding: 0 $base-line-height;
+  padding: 0 $base-spacing;
 
-  @media (min-width: 700px) {
+  @media (min-width: 704px) {
     @include grid-container($custom-grid-medium);
     padding: 0;
     .hero-container,
-    .case-summary-container,
+    section,
     .contacts-container,
     .case-study-container,
     .projects-container {
