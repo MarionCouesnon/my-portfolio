@@ -1,10 +1,8 @@
 a[role] {
   appearance: none;
-  background: linear-gradient(135deg, $orange, $red);
-  background-size: 150% 150%;
   border: 0;
   border-radius: $base-border-radius;
-  color: #fff;
+  color: $secondary-font-color;
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
@@ -24,31 +22,45 @@ a[role] {
     transition: background-color $base-duration $base-timing;
     font-size: $base-font-size * 1.2;
     padding: $base-spacing;
+  }
 
-    &:hover {
-        background: linear-gradient(135deg, $orange, $red);
-        background-size: 250% 250%;
-        -webkit-animation: AnimationButton 2s ease infinite;
-        -moz-animation: AnimationButton 2s ease infinite;
-        animation: AnimationButton 2s ease infinite;
+  &:link {
+    background: linear-gradient(135deg, $orange, $red);
+    background-size: 150% 150%;
+  }
 
-        @-webkit-keyframes AnimationButton {
-            0%{background-position:0% 50%}
-            50%{background-position:100% 50%}
-            100%{background-position:0% 50%}
-        }
-        @-moz-keyframes AnimationButton {
-            0%{background-position:0% 50%}
-            50%{background-position:100% 50%}
-            100%{background-position:0% 50%}
-        }
-        @keyframes AnimationButton {
-            0%{background-position:0% 50%}
-            50%{background-position:100% 50%}
-            100%{background-position:0% 50%}
-        }
+  &:visited {
+    background-color: $blue;
+    border: $base-border;
+  }
 
-    }
+  &:hover {
+      background: linear-gradient(135deg, $orange, $red);
+      background-size: 250% 250%;
+      -webkit-animation: AnimationButton 2s ease infinite;
+      -moz-animation: AnimationButton 2s ease infinite;
+      animation: AnimationButton 2s ease infinite;
+
+      @-webkit-keyframes AnimationButton {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+      }
+      @-moz-keyframes AnimationButton {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+      }
+      @keyframes AnimationButton {
+          0%{background-position:0% 50%}
+          50%{background-position:100% 50%}
+          100%{background-position:0% 50%}
+      }
+  }
+
+  &:active {
+    cursor: wait;
+    box-shadow: $form-box-shadow;
   }
 
   &:disabled {
