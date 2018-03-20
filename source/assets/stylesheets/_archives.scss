@@ -1,0 +1,98 @@
+.to-archive-container {
+  padding: $small-spacing * 3 0 $small-spacing * 5;
+  background-color: $blue;
+  color: $white;
+
+  @media (min-width: 704px) {
+   padding: 0;
+  }
+}
+
+.projects-list-wrapper {
+  margin-top: $base-spacing * 2;
+
+  @media (min-width: 704px) {
+    margin-top: $base-spacing * 3;
+
+    .project-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 24px;
+    }
+  }
+  @media (min-width: 1020px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 24px;
+    margin-top: $base-spacing * 4;
+
+    .project-list {
+      display: block;
+    }
+  }
+}
+
+.dark-background {
+  background-color: $blue;
+  color: $white;
+  padding: $small-spacing $base-spacing;
+  min-height: 100vh;
+
+  @media (min-width: 704px) {
+   padding: $base-spacing $small-spacing * 3;
+  }
+
+  @media (min-width: 1020px) {
+   padding: $base-spacing * 2 $small-spacing * 5;
+  }
+}
+
+small {
+  text-transform: uppercase;
+
+}
+
+details summary {
+  cursor: pointer;
+  padding: $small-spacing;
+}
+
+details[open] summary {
+  background-color: $white;
+  color: $blue;
+}
+
+details summary::-webkit-details-marker {
+   float: right;
+   margin-top: 4px;
+   @media (min-width: 704px) {
+    margin-top: 8px;
+   }
+}
+
+summary {
+  color: $white;
+  border-bottom: solid 1px $white;
+
+  &:focus {
+    outline: unset;
+  }
+}
+
+.project-list {
+
+  li {
+    line-height: $small-spacing * 3;
+    margin: $base-spacing 0;
+    padding: 0 0 0 $small-spacing;
+  }
+}
+
+hr {
+  margin: 0;
+}
+
+li > p {
+  font-family: $secondary-heading-font-family;
+  margin: 0;
+}

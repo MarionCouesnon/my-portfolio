@@ -23,14 +23,30 @@ p {
 
 a:not(.button),
 a > :not(.fa) {
-  color: $base-font-color;
-  text-decoration-line: none;
-  transition: color $base-duration $base-timing;
+  &:link {
+    color: currentcolor;
+    text-decoration: underline;
+    transition: color $base-duration $base-timing;
+  }
 
-  &:active,
-  &:focus,
+  &:visited {
+    color: currentcolor;
+    text-decoration: underline dotted;
+  }
+
   &:hover {
     color: $orange;
+    cursor: pointer;
+  }
+
+  &:active {
+    cursor: wait;
+  }
+
+  &:disabled {
+    color: currentcolor;
+    text-decoration: line-through;
+    cursor: not-allowed;
   }
 }
 

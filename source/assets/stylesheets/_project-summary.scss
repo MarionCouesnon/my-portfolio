@@ -36,6 +36,7 @@ article {
 }
 
 .details {
+  font-family: $secondary-heading-font-family;
 	margin-bottom: $small-spacing;
 
 	@media (min-width: 704px) {
