@@ -50,3 +50,27 @@ article {
     text-align: right;
   }
 }
+
+.project-presentation-container {
+  margin-bottom: $base-spacing * 2;
+
+  & > h4 {
+    margin-top: $small-spacing;
+  }
+
+  @media (min-width: 704px) {
+    margin-bottom: $small-spacing * 9;
+
+    & > h4 {
+      margin-top: $base-spacing;
+    }
+  }
+
+    @media (min-width: 1020px) {
+      margin-bottom: $small-spacing * 9;
+
+      & > h4 {
+        margin-top: $small-spacing;
+      }
+  }
+}
