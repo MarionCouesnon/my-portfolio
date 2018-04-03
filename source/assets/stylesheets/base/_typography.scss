@@ -21,16 +21,16 @@ p {
   margin: $small-spacing 0 $base-spacing;
 }
 
-a:not(.button),
-a > :not(.fa) {
+p > a,
+.summary-info-wrapper > li > a {
   &:link {
-    color: currentcolor;
+    color: $blue;
     text-decoration: underline;
     transition: color $base-duration $base-timing;
   }
 
   &:visited {
-    color: currentcolor;
+    color: $blue;
     text-decoration: underline dotted;
   }
 

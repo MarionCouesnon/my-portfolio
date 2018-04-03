@@ -1,3 +1,74 @@
+
+.logo-name {
+  font-family: $secondary-heading-font-family;
+  padding-left: $base-spacing;
+  text-align: center;
+  margin: $base-spacing 0 $small-spacing;
+  span {
+    font-family: $heading-font-family;
+  }
+  @media (min-width: 704px) {
+    margin: 0;
+    text-align: left;
+  }
+}
+
+.header-container {
+   display: flex;
+   flex-direction: column;
+ @media (min-width: 704px) {
+   flex-direction: row;
+   justify-content: space-between;
+   //border-bottom: 1px solid #F2F2F2;
+   padding: $small-spacing * 3 0;
+ }
+}
+
+.menu-wrapper {
+  display: flex;
+  justify-content: center;
+
+  li {
+    padding-right: $base-spacing;
+  }
+
+  li:last-child{
+    padding-right: 0;
+  }
+
+  & a {
+    display: block;
+    font-family: $alt-font-family;
+    font-size: $sub-font-size;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $blue;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 704px) {
+    justify-content: flex-end;
+
+    li:last-child{
+      padding-right: $base-spacing;
+    }
+  }
+}
+
+li a.active {
+    border-bottom: 1px solid $white;
+    &:hover {
+      color:$white;
+      cursor: default;
+    }
+}
+
+////////Bottom case study page elements ////
 .nav-container {
   display: flex;
   justify-content: space-between;

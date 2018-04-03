@@ -3,22 +3,30 @@ title: Marion Couesnon Portfolio
 ---
 
 <div class="hero">
+  <div class="header-container">
+    <div class="logo-container">
+      <p class="logo-name"><span>Marion Couesnon &harr;</span> hyperactive designer</p>
+    </div>
+    <nav class="menu-container">
+      <ul class="menu-wrapper">
+        <li><a href="#index" class="active">home</a></li>
+        <li><a href="#case-study">case study</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#archives">archives</a></li>
+      </ul>
+    </nav>
+  </div>
   <div class="grid-container">
     <div class="hero-container">
-      <div class="logo-container">
-        <p class="logo-name">Marion Couesnon</p>
-        <p class="logo-baseline">hyperactive designer</p>
-      </div>
-      <div class="intro-container">
-        <h1 class="intro">Hi there! I’m an interaction designer. My skills are shared between UX, UI and coding. My aim is to create delightful and useful products for innovative companies.</h1>
-        <p class="announcement">And I am currently available for work!</p>
-      </div>
+      <h1 class="intro">Hi there! I’m an interaction designer. My skills are shared between UX, UI and coding. My aim is to create delightful and useful products for innovative companies.</h1>
+      <p class="announcement">And I am currently available for work!</p>
+      <p class="scrollDown">&darr;</p>
     </div>
   </div>
 </div>
 
 <div class="grid-container">
-  <section>
+  <section id="case-study">
     <h3>Case studies</h3>
     <article>
       <% link_to '/deadline' do %>
@@ -113,7 +121,7 @@ title: Marion Couesnon Portfolio
     </article>
   </section>
 
-  <section>
+  <section id="projects">
     <h3>Projects</h3>
     <p class="details">This selection contains professional work samples I've done recently. For more information, please <a href="mailto:marioncouesnon@gmail.com">contact me.</a></p>
     <div class="project-presentation-container">
@@ -174,8 +182,8 @@ title: Marion Couesnon Portfolio
 
 <div class="to-archive-container">
   <div class="grid-container">
-    <section>
-      <h3> Lost in the galaxy </h3>
+    <section id="archives">
+      <h3>Archives</h3>
       <p class="details">Want to know more about projects I've been involved in? Good, then have a look a my archives!</p>
       <% link_to '/archives', class: "button", role: "button" do %>Look at the archives<% end %>
     </section>
